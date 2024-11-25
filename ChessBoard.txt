@@ -1,0 +1,115 @@
+
+
+#include <windows.h>
+#include <GL/glut.h>
+
+void display() {
+
+glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+glClear(GL_COLOR_BUFFER_BIT);
+glOrtho(-5,5,-5,5,-5,5);
+
+glBegin(GL_LINES);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(-4.0f, 2.765f);    // x, y
+glVertex2f(2.765f, 2.765f);    // x, y
+glEnd();
+
+glBegin(GL_LINES);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(-4.f, 2.765f);    // x, y
+glVertex2f(-4.f, -4.0f);    // x, y
+glEnd();
+
+glBegin(GL_LINES);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(-4.f, -4.0f);    // x, y
+glVertex2f(2.765f, -4.0f);    // x, y
+glEnd();
+
+glBegin(GL_LINES);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(2.765f, 2.765f);    // x, y
+glVertex2f(2.765f, -4.0f);    // x, y
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(-4.0077615659058,2.7433958875146);
+glVertex2f(-2.3260640433621,2.7433958875146);
+glVertex2f(-2.3260640433621,1.0747347798745);
+glVertex2f(-4,1);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(-0.6182936910116,2.7303594726112);
+glVertex2f(1.0894766613389,2.7303594726112);
+glVertex2f(1.0657740887872,1.130435825371);
+glVertex2f(-0.6159234337564,1.130435825371);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(-2.3260640433621,1.0747347798745);
+glVertex2f(-0.6159234337564,1.130435825371);
+glVertex2f(-0.6159234337564,-0.5903709418829);
+glVertex2f(-2.3367302010104,-0.5903709418829);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(1.0657740887872,1.130435825371);
+glVertex2f(2.7344351964274,1.0652537508538);
+glVertex2f(2.7344351964274,-0.5903709418829);
+glVertex2f(1.0788105036907,-0.6034073567864);
+glEnd();
+
+
+glBegin(GL_QUADS);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(-4.0053913086506,-0.6164437716898);
+glVertex2f(-2.3367302010104,-0.5903709418829);
+glVertex2f(-2.2715481264932,-2.28510487933);
+glVertex2f(-4.0053913086506,-2.3372505389437);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(-0.6159234337564,-0.5903709418829);
+glVertex2f(1.0788105036907,-0.6034073567864);
+glVertex2f(1.0788105036907,-2.3111777091369);
+glVertex2f(-0.6159234337564,-2.3111777091369);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(-2.2715481264932,-2.28510487933);
+glVertex2f(-0.6159234337564,-2.3111777091369);
+glVertex2f(-0.6159234337564,-3.979838816777);
+glVertex2f(-2.3106573712035,-3.9668024018736);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3f(0.0f, 0.0f, 0.0f);
+glVertex2f(1.0788105036907,-2.3111777091369);
+glVertex2f(2.7344351964274,-2.3111777091369);
+glVertex2f(2.721398781524,-3.9407295720667);
+glVertex2f(1.1570289931113,-3.9407295720667);
+glEnd();
+
+glFlush();
+}
+
+int main(int argc, char** argv) {
+
+glutInit(&argc, argv);
+glutInitWindowSize(520, 520);
+glutCreateWindow("OpenGL Setup");
+glutDisplayFunc(display);
+glutMainLoop();
+return 0;
+
+}
+
+
