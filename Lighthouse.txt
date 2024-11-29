@@ -1,0 +1,233 @@
+
+#include <windows.h>  // for MS Windows
+#include <GL/glut.h>  // GLUT, include glu.h and gl.h
+#include <math.h>
+#include <string.h>
+
+
+/* Handler for window-repaint event. Call back when the window first appears and
+whenever the window needs to be re-painted. */
+
+
+void display() {
+	glClearColor(1.0f, 1.0f, 1.0f, 1.0f); // Set background color to black and opaque
+	glClear(GL_COLOR_BUFFER_BIT);         // Clear the color buffer (background)
+	glLineWidth(7.5);
+	glBegin(GL_LINES);              // Each set of 4 vertices form a quad
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-10,1);    // x, y
+	glVertex2f(-8,1);
+	glEnd();
+
+	glBegin(GL_LINES);              // Each set of 4 vertices form a quad
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-8,1);    // x, y
+	glVertex2f(-5.42,1.9);
+	glEnd();
+
+	glBegin(GL_LINES);              // Each set of 4 vertices form a quad
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.42,1.9);    // x, y
+	glVertex2f(-3,1);
+
+
+glEnd();
+
+    glBegin(GL_LINES);              // Each set of 4 vertices form a quad
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-3,1);    // x, y
+	glVertex2f(-0.62,0.98);
+	glEnd();
+//tower
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.6543528222046,1.9064810601135);    // x, y
+	glVertex2f(-5.5591529555525,3.8178014598205);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.1051228222888,1.899157993448);    // x, y
+	glVertex2f(-5.2003226889408,3.810478393155);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.5591529555525,3.8178014598205);    // x, y
+	glVertex2f(-5.2003226889408,3.810478393155);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.5591529555525,3.8178014598205);    // x, y
+	glVertex2f(-5.6088000966626,3.9269521070205);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.2003226889408,3.810478393155);    // x, y
+	glVertex2f(-5.1318619106065,3.9294491655862);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.6088000966626,3.9269521070205);    // x, y
+	glVertex2f(-5.1318619106065,3.9294491655862);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.6088000966626,3.9269521070205);    // x, y
+	glVertex2f(-5.6312736237542,4.0068579811241);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.1318619106065,3.9294491655862);    // x, y
+	glVertex2f(-5.1193766177778,4.0093550396899);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.6312736237542,4.0068579811241);    // x, y
+	glVertex2f(-5.1193766177778,4.0093550396899);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.6312736237542,4.0068579811241);    // x, y
+	glVertex2f(-5.6462559751487,4.1167285580166);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.1193766177778,4.0093550396899);    // x, y
+	glVertex2f(-5.1093883835149,4.1267167922796);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.6462559751487,4.1167285580166);    // x, y
+	glVertex2f(-5.1093883835149,4.1267167922796);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.5392497927101,4.1315561330537);    // x, y
+	glVertex2f(-5.5337562638655,4.3485505224164);
+	glEnd();
+
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.2178783552996,4.1315561330537);    // x, y
+	glVertex2f(-5.2123848264549,4.3485505224164);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.4568468600407,4.1288093686314);    // x, y
+	glVertex2f(-5.4650871533077,4.3815116954841);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.292040994702,4.1260626042091);    // x, y
+	glVertex2f(-5.2947877591243,4.3815116954841);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.4403662735068,4.3183361137709);    // x, y
+	glVertex2f(-5.3112683456582,4.3183361137709);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.6189059609571,4.3677778733726);    // x, y
+	glVertex2f(-5.3744439273714,4.69738960405);
+	glVertex2f(-5.1327286582079,4.3870052243287);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(1.0f, 1.0f, 1.0f); // Red
+	glVertex2f(-5.4885163711085,4.4139693806349);    // x, y
+	glVertex2f(-5.379937456216,4.5353305031336);
+	glVertex2f(-5.2906755175973,4.429319102028);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-7.795501179505,4.6687823556208);    // x, y
+	glVertex2f(-5.8049402835712,4.3024485322006);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-8.2318797954273,4.1795280866313);    // x, y
+	glVertex2f(-5.8606848159784,4.1581659696994);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-7.8527022198848,3.5867293417691);    // x, y
+	glVertex2f(-5.8286416405805,3.9765879757776);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-2.8806695039683,4.6975594222317);    // x, y
+	glVertex2f(-4.8833679663407,4.3183818466892);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-2.4427461068629,4.1741875573983);    // x, y
+	glVertex2f(-4.8353032032438,4.1474849112334);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-2.8486263285704,3.6027509294681);    // x, y
+	glVertex2f(-4.8566653201757,3.9926095634766);
+	glEnd();
+
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.4401462722199,3.5460711858615);    // x, y
+	glVertex2f(-5.3744885123716,3.7503397720562);
+	glVertex2f(-5.3088307525233,3.5460711858615);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.0f, 0.0f, 0.0f); // Red
+	glVertex2f(-5.4313919042401,2.3918150630353);    // x, y
+	glVertex2f(-5.3712056243792,2.6004608332198);
+	glVertex2f(-5.3150317631757,2.3918150630353);
+	glEnd();
+
+
+
+
+glEnd();
+
+glEnd();
+	glFlush();  // Render now
+}
+
+/* Main function: GLUT runs as a console application starting at main()  */
+int main(int argc, char** argv) {
+	glutInit(&argc, argv);                 // Initialize GLUT
+	glutCreateWindow("OpenGL Setup Test");
+	gluOrtho2D(-9,0,0,5); // Create a window with the given title
+	glutInitWindowSize(320, 320);// Set the window's initial width & height
+	glutDisplayFunc(display);// Register display callback handler for window re-paint
+
+	glutMainLoop();           // Enter the event-processing loop
+	return 0;
+}
+
+
+
+
